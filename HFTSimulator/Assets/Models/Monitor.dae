@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<COLLADA xmlns="http://www.collada.org/2005/11/COLLADASchema" version="1.4.1">
+  <asset>
+    <contributor>
+      <author>Blender User</author>
+      <authoring_tool>Blender 2.75.0 commit date:2015-07-07, commit time:14:56, hash:c27589e</authoring_tool>
+    </contributor>
+    <created>2015-11-14T22:27:31</created>
+    <modified>2015-11-14T22:27:31</modified>
+    <unit name="meter" meter="1"/>
+    <up_axis>Z_UP</up_axis>
+  </asset>
+  <library_images/>
+  <library_effects>
+    <effect id="Material-effect">
+      <profile_COMMON>
+        <technique sid="common">
+          <phong>
+            <emission>
+              <color sid="emission">0 0 0 1</color>
+            </emission>
+            <ambient>
+              <color sid="ambient">0 0 0 1</color>
+            </ambient>
+            <diffuse>
+              <color sid="diffuse">0.64 0.64 0.64 1</color>
+            </diffuse>
+            <specular>
+              <color sid="specular">0.5 0.5 0.5 1</color>
+            </specular>
+            <shininess>
+              <float sid="shininess">50</float>
+            </shininess>
+            <index_of_refraction>
+              <float sid="index_of_refraction">1</float>
+            </index_of_refraction>
+          </phong>
+        </technique>
+      </profile_COMMON>
+    </effect>
+  </library_effects>
+  <library_materials>
+    <material id="Material-material" name="Material">
+      <instance_effect url="#Material-effect"/>
+    </material>
+  </library_materials>
+  <library_geometries>
+    <geometry id="Cube-mesh" name="Cube">
+      <mesh>
+        <source id="Cube-mesh-positions">
+          <float_array id="Cube-mesh-positions-array" count="108">0.6809611 1.29506 -1 0.6809611 -1.29506 -1 -1 -0.6475297 -0.8568282 -0.9999998 0.6475304 -0.8568282 0.6809616 1.295059 1 0.6809605 -1.295061 1 -1 -0.6475296 0.1431717 -1 0.6475302 0.1431717 0.7264863 1.092955 -0.8439413 0.7264863 -1.092955 -0.8439413 0.7264868 1.092954 0.8439413 0.7264857 -1.092955 0.8439413 0.6800317 1.04962 -0.8104799 0.6800317 -1.04962 -0.8104799 0.6800322 1.04962 0.8104799 0.6800311 -1.049621 0.8104799 0.1206408 1.079217 -0.9522761 -0.4396795 0.8633736 -0.9045521 0.1206407 -1.079216 -0.9522761 -0.4396796 -0.8633731 -0.9045521 0.120641 1.079216 0.7143906 -0.4396795 0.8633733 0.4287812 0.1206402 -1.079217 0.7143906 -0.43968 -0.8633733 0.4287812 0.1456517 1.199792 -1.080772 -0.4772704 0.9598342 -1.027716 0.1456516 -1.199792 -1.080772 -0.4772706 -0.9598337 -1.027716 0.3769081 1.494142 -1.141009 -0.7176792 1.195314 -1.139952 0.376908 -1.494142 -1.141009 -0.7176793 -1.195313 -1.139952 0.3768531 1.494142 -1.197963 -0.7177342 1.195314 -1.196906 0.376853 -1.494142 -1.197963 -0.7177343 -1.195313 -1.196906</float_array>
+          <technique_common>
+            <accessor source="#Cube-mesh-positions-array" count="36" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Cube-mesh-normals">
+          <float_array id="Cube-mesh-normals-array" count="204">-0.08486539 0 -0.9963924 -0.4541317 0 0.8909347 0.9755566 -0.2197486 2.58395e-7 -0.3594663 -0.9331581 -2.23348e-7 -1 1.84099e-7 -2.38419e-7 -0.3594655 0.9331584 0 0.5844658 -3.40962e-7 -0.8114185 0.9755564 0.2197492 -2.1524e-7 0.9599866 0 -0.2800461 0.9599867 -4.24677e-7 0.2800458 1 -4.9046e-7 3.67712e-7 0.6821252 -0.7312355 -4.8104e-7 0.682124 0.7312365 5.10853e-7 0.5844686 0 0.8114165 -0.3594655 0.9331584 3.19612e-7 -0.3594657 0.9331583 2.97797e-7 -0.3594661 -0.9331581 -4.96328e-7 -0.3594662 -0.9331582 -5.95594e-7 -0.4541318 1.75635e-7 0.8909345 -0.4541319 1.57797e-7 0.8909345 -0.08486515 0 -0.9963926 -0.9564437 1.20559e-7 0.291917 0.2520648 0 0.9677104 -0.2271882 -0.7318319 0.6425011 0.9815788 0 0.1910578 -0.227188 0.7318316 0.6425015 0.9999995 0 -9.6594e-4 -0.06749862 0.250658 0.9657198 -0.4230236 0 0.9061188 -0.06535172 -0.3741824 0.9250496 -9.65937e-4 0 -0.9999995 -0.2633661 0.9646959 2.58255e-4 -0.9999996 0 9.65947e-4 -0.2633669 -0.9646958 2.54565e-4 -0.08486515 0 -0.9963924 -0.4541319 1.64658e-7 0.8909345 0.9755566 -0.2197486 2.33764e-7 -0.3594657 -0.9331583 0 -1 1.84098e-7 -2.38419e-7 -0.3594654 0.9331585 2.23348e-7 0.5844663 -2.67909e-7 -0.811418 0.9755566 0.2197481 -1.61837e-7 0.9599867 0 -0.2800457 0.9599867 -5.03206e-7 0.2800459 1 0 -2.9417e-7 0.6821234 -0.7312371 -3.47413e-7 0.6821256 0.7312351 4.16897e-7 0.5844662 0 0.8114181 -0.3594654 0.9331584 2.97797e-7 -0.3594654 0.9331584 2.38238e-7 -0.359466 -0.9331583 -4.76475e-7 -0.3594658 -0.9331582 -2.97797e-7 -0.4541318 1.92101e-7 0.8909346 -0.4541317 1.75635e-7 0.8909347 -0.08486551 0 -0.9963924 -0.9564438 0 0.2919169 0.2520654 0 0.9677103 -0.2271876 -0.7318307 0.6425027 0.9815788 0 0.1910583 -0.2271879 0.7318318 0.6425014 0.9999996 0 -9.65946e-4 -0.06535154 0.3741825 0.9250496 -0.4230236 0 0.9061187 -0.06749856 -0.250658 0.9657198 -9.65609e-4 0 -0.9999995 -0.2633661 0.9646959 2.50876e-4 -0.9999996 0 9.65941e-4 -0.2633661 -0.9646959 2.54565e-4</float_array>
+          <technique_common>
+            <accessor source="#Cube-mesh-normals-array" count="68" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="Cube-mesh-vertices">
+          <input semantic="POSITION" source="#Cube-mesh-positions"/>
+        </vertices>
+        <polylist material="Material-material" count="68">
+          <input semantic="VERTEX" source="#Cube-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#Cube-mesh-normals" offset="1"/>
+          <vcount>3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 </vcount>
+          <p>17 0 19 0 2 0 21 1 7 1 6 1 1 2 9 2 11 2 19 3 23 3 6 3 2 4 6 4 7 4 17 5 3 5 7 5 11 6 15 6 14 6 4 7 10 7 8 7 1 8 0 8 8 8 4 9 5 9 11 9 14 10 15 10 13 10 10 11 14 11 12 11 9 12 13 12 15 12 8 13 12 13 13 13 0 14 16 14 20 14 16 15 17 15 21 15 1 16 5 16 22 16 18 17 22 17 23 17 20 18 22 18 5 18 20 19 21 19 23 19 1 20 18 20 16 20 17 21 25 21 27 21 26 22 30 22 28 22 18 23 19 23 27 23 18 24 26 24 24 24 16 25 24 25 25 25 30 26 34 26 32 26 24 27 28 27 29 27 25 28 29 28 31 28 26 29 27 29 31 29 32 30 34 30 35 30 28 31 32 31 33 31 29 32 33 32 35 32 31 33 35 33 34 33 3 34 17 34 2 34 23 35 21 35 6 35 5 36 1 36 11 36 2 37 19 37 6 37 3 38 2 38 7 38 21 39 17 39 7 39 10 40 11 40 14 40 0 41 4 41 8 41 9 42 1 42 8 42 10 43 4 43 11 43 12 44 14 44 13 44 8 45 10 45 12 45 11 46 9 46 15 46 9 47 8 47 13 47 4 48 0 48 20 48 20 49 16 49 21 49 18 50 1 50 22 50 19 51 18 51 23 51 4 52 20 52 5 52 22 53 20 53 23 53 0 54 1 54 16 54 19 55 17 55 27 55 24 56 26 56 28 56 26 57 18 57 27 57 16 58 18 58 24 58 17 59 16 59 25 59 28 60 30 60 32 60 25 61 24 61 29 61 27 62 25 62 31 62 30 63 26 63 31 63 33 64 32 64 35 64 29 65 28 65 33 65 31 66 29 66 35 66 30 67 31 67 34 67</p>
+        </polylist>
+      </mesh>
+    </geometry>
+  </library_geometries>
+  <library_controllers/>
+  <library_visual_scenes>
+    <visual_scene id="Scene" name="Scene">
+      <node id="Cube" name="Cube" type="NODE">
+        <matrix sid="transform">1 0 0 0 0 1 0 0 0 0 1 1 0 0 0 1</matrix>
+        <instance_geometry url="#Cube-mesh" name="Cube">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="Material-material" target="#Material-material"/>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+    </visual_scene>
+  </library_visual_scenes>
+  <scene>
+    <instance_visual_scene url="#Scene"/>
+  </scene>
+</COLLADA>
