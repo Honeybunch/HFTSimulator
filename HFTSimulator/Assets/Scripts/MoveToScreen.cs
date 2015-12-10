@@ -12,10 +12,14 @@ public class MoveToScreen : MonoBehaviour
     public float MoveSpeed = 1.0f;
     public float RotSpeed = 2.0f;
 
+    private InitializeGameCanvas gameCanvas;
+
     public void Start()
     {
         startPos = transform.position;
         startRot = transform.rotation;
+
+        gameCanvas = GetComponent<InitializeGameCanvas>();
     }
 
     public void Activate()
@@ -52,6 +56,8 @@ public class MoveToScreen : MonoBehaviour
             
             yield return null;
         }
+
+        gameCanvas.Activate();
 
         yield return null;
     }
