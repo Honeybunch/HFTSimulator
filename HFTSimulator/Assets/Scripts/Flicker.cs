@@ -14,17 +14,17 @@ public class Flicker : MonoBehaviour
 
     public float MinBrightness = 1;
 
-    private Light light;
+    private Light flickeringLight;
     private AudioSource flickerSound;
 
     float startIntensitiy;
 
     void Start() 
     {
-        light = GetComponent<Light>();
+        flickeringLight = GetComponent<Light>();
         flickerSound = GetComponent<AudioSource>();
 
-        startIntensitiy = light.intensity;
+        startIntensitiy = flickeringLight.intensity;
 
         StartCoroutine(FlickerLight());
     }
@@ -48,28 +48,28 @@ public class Flicker : MonoBehaviour
 
     IEnumerator BrightenLight()
     {
-        while (light.intensity < startIntensitiy)
+        while (flickeringLight.intensity < startIntensitiy)
         {
-            light.intensity += BrightenSpeed;
+            flickeringLight.intensity += BrightenSpeed;
             yield return null;
         }
 
-        if (light.intensity > startIntensitiy)
-            light.intensity = startIntensitiy;
+        if (flickeringLight.intensity > startIntensitiy)
+            flickeringLight.intensity = startIntensitiy;
 
         yield return null;
     }
 
     IEnumerator DimLight() 
     {
-        while (light.intensity > MinBrightness)
+        while (flickeringLight.intensity > MinBrightness)
         {
-            light.intensity -= DimSpeed;
+            flickeringLight.intensity -= DimSpeed;
             yield return null;
         }
 
-        if (light.intensity < MinBrightness)
-            light.intensity = MinBrightness;
+        if (flickeringLight.intensity < MinBrightness)
+            flickeringLight.intensity = MinBrightness;
 
         yield return null;
     }
